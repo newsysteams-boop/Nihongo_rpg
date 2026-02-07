@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihongo RPG</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="header">
+            <h1 id="username">Hunter</h1>
+            <div id="rank">Rank: F</div>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <span>Level</span>
+                <span id="level">1</span>
+            </div>
+            <div class="xp-bar">
+                <div id="xp-fill" style="width: 10%;"></div>
+            </div>
+            <p>XP: <span id="xp">0</span> / 100</p>
+        </div>
+
+        <div class="menu">
+            <button class="btn" onclick="startTraining()">Тренировка слов</button>
+            <button class="btn">Квесты</button>
+            <button class="btn">Инвентарь</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
